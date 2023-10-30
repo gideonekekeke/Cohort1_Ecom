@@ -1,0 +1,52 @@
+[
+    {    "id":"abcd432",
+        "image":"https://themewagon.github.io/ultras/images/selling-products1.jpg",
+        "title":"Half Sleeve T-Shirt",
+        "price":"40"
+    },
+    {
+        "id":"efgh765",
+        "image":"https://themewagon.github.io/ultras/images/selling-products2.jpg",
+        "title":"Stylish Grey T-Shirt",
+        "price":"35"
+
+    },
+    {
+        "id":"ijkl987",
+        "image":"https://themewagon.github.io/ultras/images/selling-products3.jpg",
+        "title":"Silk White Shirt",
+        "price":"35"
+    },
+    {
+        "id":"mnop123",
+        "image":"https://themewagon.github.io/ultras/images/selling-products5.jpg",
+        "title":"Full Sleeve Jeans Jacket",
+        "price":"40"
+
+    },
+    {
+        "id":"qrst456",
+        "image":"https://themewagon.github.io/ultras/images/selling-products4.jpg",
+        "title":"Grunge Hoodie",
+        "price":"30"
+    },
+    {
+        "id":"uvwx098",
+        "image":"https://themewagon.github.io/ultras/images/selling-products13.jpg",
+        "title":"Orange White Nike",
+        "price":"55"
+    },
+    {
+        "id":"yzabc048",
+        "image":"https://themewagon.github.io/ultras/images/selling-products14.jpg",
+        "title":"Running Shoe",
+        "price":"80"
+
+    },
+    {
+        "id":"dsty333",
+        "image":"https://themewagon.github.io/ultras/images/selling-products16.jpg",
+        "title":"Nike Brand Shoe",
+        "price":"65"
+    }
+]
