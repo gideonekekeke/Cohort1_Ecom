@@ -17,8 +17,8 @@ interface CartData {
 }
 
 const initialState = {
-	currentUser: {} as IUser | null,
-	cart: [] as Array<CartData> | null,
+	currentUser: ({} as IUser) || null,
+	cart: ([] as Array<CartData>) || null,
 	totalPrice: 0,
 	totalQuantity: 0,
 };
@@ -35,7 +35,7 @@ const ReduxState = createSlice({
 			const check = state.cart.findIndex((el) => el._id === payload._id);
 
 			if (check >= 0) {
-				state!.cart[check]!.CartQuantity! += 1;
+				state.cart[check].CartQuantity! += 1;
 			} else {
 				state.cart?.push({
 					...payload,
@@ -47,14 +47,14 @@ const ReduxState = createSlice({
 		},
 
 		Logout: (state) => {
-			state.currentUser = null;
-			state.cart = null;
+			state.currentUser = {}
+			state.cart = []
 			state.totalQuantity = 0;
 			state.totalPrice = 0;
 		},
 	},
 });
 
-export const { addUser, addToCart } = ReduxState.actions;
+export const { addUser, addToCart, Logout } = ReduxState.actions;
 
 export default ReduxState.reducer;

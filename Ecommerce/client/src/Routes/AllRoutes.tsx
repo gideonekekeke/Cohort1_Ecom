@@ -7,6 +7,8 @@ import MerchantCard from "../Components/MerchantCard";
 import AgentMerchant from "../Components/AgentMerchant";
 import Register from "../Pages/Register";
 import DetailedPage from "../Pages/DetailedPage";
+import CartPage from "../Pages/CartPage";
+import SuccessPage from "../Pages/SuccessPage";
 
 const Index = createBrowserRouter([
 	{
@@ -21,6 +23,16 @@ const Index = createBrowserRouter([
 			{
 				path: "/shoppage",
 				element: <ShopPage />,
+			},
+
+			{
+				path: "/carts",
+				element: <CartPage />,
+			},
+
+			{
+				path: "/success",
+				element: <SuccessPage />,
 			},
 
 			{

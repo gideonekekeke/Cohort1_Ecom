@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsCart4 } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ViewSingleUser } from "../../utils/ApiCalls";
+import { Logout } from "../../services/ReduxState";
 
 const Header: React.FC = () => {
+	const dispatch = useDispatch();
 	const user = useSelector((state: any) => state.currentUser);
 	const [userData, setUserData] = useState<any>();
 
@@ -47,10 +49,15 @@ items-center text-[12px]'>
 
 				{<AiOutlineSearch />}
 
-				{<BsCart4 />}
+				<Link to='/carts'>{<BsCart4 />}</Link>
 				{user?.id ? (
 					<Link>
-						<h6>LOG OUT</h6>
+						<h6
+							onClick={() => {
+								dispatch(Logout());
+							}}>
+							LOG OUT
+						</h6>
 					</Link>
 				) : (
 					<Link to='/signin'>
